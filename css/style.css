@@ -29,10 +29,10 @@ body{
     left: 43%;
     top: 42%;
     transform: translate(-50%,-50%);
-    animation: orbit2 2s linear infinite;
+    animation: orbit-mercury 2s linear infinite;
 }
 
-@keyframes orbit2{
+@keyframes orbit-mercury{
     from{
         transform: rotate(0deg) translateX(70px) rotate(0deg);    
     }
@@ -74,7 +74,7 @@ p{
     left: 40%;
     top: 42%;
     transform: translate(-50%,-50%);
-    animation: orbit3 10s linear infinite;
+    animation: orbit-venus 10s linear infinite;
 }
 
 .venus-outline{
@@ -82,7 +82,7 @@ p{
     width: 200px;
 }
 
-@keyframes orbit3{
+@keyframes orbit-venus{
     from{
         transform: rotate(0deg) translateX(100px) rotate(0deg);    
     }
@@ -101,7 +101,7 @@ p{
     left: 44%;
     top: 43%;
     transform: translate(-50%,-50%);
-    animation: orbit4 20s linear infinite;
+    animation: orbit-earth 20s linear infinite;
 }
 
 .earth-outline{
@@ -128,10 +128,10 @@ p{
     transform: translate(-50%, -50%);
     left: 45%;
     top: 45%;
-    animation: orbit5 3s linear infinite
+    animation: orbit-earth-inner 3s linear infinite
 }
 
-@keyframes orbit4{
+@keyframes orbit-earth{
     from{
         transform: rotate(0deg) translateX(150px) rotate(0deg);    
     }
@@ -140,7 +140,7 @@ p{
     }
 }
 
-@keyframes orbit5{
+@keyframes orbit-earth-inner{
     from{
         transform: rotate(0deg) translateX(33px) rotate(0deg);    
     }
@@ -158,7 +158,7 @@ to{
     left: 46.5%;
     top: 46.5%;
     transform: translate(-50%,-50%);
-    animation: orbit6 30s linear infinite;
+    animation: orbit-mars 30s linear infinite;
 }
 
 .mars-outline{
@@ -166,7 +166,7 @@ to{
     width: 370px;
 }
 
-@keyframes orbit6{
+@keyframes orbit-mars{
     from{
         transform: rotate(0deg) translateX(185px) rotate(0deg);    
     }
@@ -184,7 +184,7 @@ to{
     left: 45%;
     top: 45%;
     transform: translate(-50%,-50%);
-    animation: orbit7 60s linear infinite;
+    animation: orbit-jupiter 60s linear infinite;
 }
 
 .jupiter-outline{
@@ -192,7 +192,7 @@ to{
     width: 430px;
 }
 
-@keyframes orbit7{
+@keyframes orbit-jupiter{
     from{
         transform: rotate(0deg) translateX(217px) rotate(0deg);    
     }
@@ -210,7 +210,7 @@ to{
     left: 45%;
     top: 45%;
     transform: translate(-50%,-50%);
-    animation: orbit8 90s linear infinite;
+    animation: orbit-saturn 90s linear infinite;
 }
 
 .saturn-outline{
@@ -218,7 +218,7 @@ to{
     width: 500px;
 }
 
-@keyframes orbit8{
+@keyframes orbit-saturn{
     from{
         transform: rotate(0deg) translateX(250px) rotate(0deg);    
     }
@@ -236,7 +236,7 @@ to{
     left: 48%;
     top: 48%;
     transform: translate(-50%,-50%);
-    animation: orbit9 200s linear infinite;
+    animation: orbit-uranus 200s linear infinite;
 }
 
 .uranus-outline{
@@ -244,7 +244,7 @@ to{
     width: 560px;
 }
 
-@keyframes orbit9{
+@keyframes orbit-uranus{
     from{
         transform: rotate(0deg) translateX(280px) rotate(0deg);    
     }
@@ -262,7 +262,7 @@ to{
     left: 48%;
     top: 48%;
     transform: translate(-50%,-50%);
-    animation: orbit10 400s linear infinite;
+    animation: orbit-neptune 400s linear infinite;
 }
 
 .neptune-outline{
@@ -270,7 +270,7 @@ to{
     width: 620px;
 }
 
-@keyframes orbit10{
+@keyframes orbit-neptune{
     from{
         transform: rotate(0deg) translateX(310px) rotate(0deg);    
     }

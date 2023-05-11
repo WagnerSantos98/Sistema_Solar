@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: black;
+    background: #080e24;
     background-size: 100%;
 }
 
@@ -277,4 +277,86 @@ to{
     to{
         transform: rotate(360deg) translateX(310px) rotate(-360deg); 
     }
+}
+
+ul.solarsystem {
+    position: relative;
+    height: 640px;
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+    overflow: hidden;
+}
+ul.solarsystem li {
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    border: 2px solid #394057;
+}
+ul.solarsystem li.active.sun,
+ul.solarsystem li.active span {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+ul#descriptions {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    list-style: none;
+}
+ul#descriptions h2 {
+    cursor: pointer;
+    color: #c9c9c9;
+    -webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    font-size: 20px;
+    position: relative;
+    z-index: 101;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+	margin-bottom: -15px;
+}
+ul#descriptions h2:hover {
+   color: #aa4200; 
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+ul#descriptions li p {
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 200px;
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    background: #0f132c;
+    padding: 30px;
+    color: #c9c9c9;
+    line-height: 1.7;
+    z-index: 100;
+    border: 1px solid #1c203c;
+}
+ul#descriptions h2:hover+p {
+    visibility: visible;
+    opacity: 0.9;
+    left: -280px;
 }

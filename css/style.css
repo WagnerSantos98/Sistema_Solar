@@ -49,7 +49,7 @@ p{
 }
 
 .mercury-outline, .venus-outline, .earth-outline, .mars-outline, .jupiter-outline,
-.saturn-outline, .urans-outline, .neptune-outline{
+.saturn-outline, .uranus-outline, .neptune-outline{
     border-radius: 50%;
     border: 1px dotted #fff;
     position: absolute;
@@ -161,8 +161,8 @@ to{
 }
 
 .mars-outline{
-    height: 380px;
-    width: 380px;
+    height: 370px;
+    width: 370px;
 }
 
 @keyframes orbit6{
@@ -171,5 +171,109 @@ to{
     }
     to{
         transform: rotate(360deg) translateX(185px) rotate(-360deg); 
+    }
+}
+
+.jupiter{
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/jupiter.png);
+    background-size: 100%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit7 60s linear infinite;
+}
+
+.jupiter-outline{
+    height: 430px;
+    width: 430px;
+}
+
+@keyframes orbit7{
+    from{
+        transform: rotate(0deg) translateX(217px) rotate(0deg);    
+    }
+    to{
+        transform: rotate(360deg) translateX(217px) rotate(-360deg); 
+    }
+}
+
+.saturn{
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/saturno.png);
+    background-size: 100%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit8 90s linear infinite;
+}
+
+.saturn-outline{
+    height: 500px;
+    width: 500px;
+}
+
+@keyframes orbit8{
+    from{
+        transform: rotate(0deg) translateX(250px) rotate(0deg);    
+    }
+    to{
+        transform: rotate(360deg) translateX(250px) rotate(-360deg); 
+    }
+}
+
+.uranus{
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/urano.png);
+    background-size: 100%;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit9 200s linear infinite;
+}
+
+.uranus-outline{
+    height: 560px;
+    width: 560px;
+}
+
+@keyframes orbit9{
+    from{
+        transform: rotate(0deg) translateX(280px) rotate(0deg);    
+    }
+    to{
+        transform: rotate(360deg) translateX(280px) rotate(-360deg); 
+    }
+}
+
+.neptune{
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/netuno.png);
+    background-size: 100%;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit10 400s linear infinite;
+}
+
+.neptune-outline{
+    height: 620px;
+    width: 620px;
+}
+
+@keyframes orbit10{
+    from{
+        transform: rotate(0deg) translateX(310px) rotate(0deg);    
+    }
+    to{
+        transform: rotate(360deg) translateX(310px) rotate(-360deg); 
     }
 }
